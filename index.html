@@ -7,10 +7,13 @@
     <title>Portifolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- START NAVBAR SECTION -->
-    <nav class="navbar navbar-expand-lg navbar-dark menu">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark menu shadow">
         <div class="container">
           <a class="navbar-brand text-light" href="#">
               Portifolio
@@ -51,11 +54,12 @@
       <!-- START THE INTRO SECTION -->
       <section id="home" class="intro-section">
           <div class="container">
-              <div class="row">
+              <div class="row align-items-center text-white">
+                <!-- START THE INTRO SECTION -->
                   <div class="col-md-6 intros">
                     <h1 class="display-2">
-                        <span class="display-2--intro">Hey!, I'm Rodney</span>
-                        <span class="display-2--description">
+                        <span class="display-2--intro ">Hey!, I'm Rodney</span>
+                        <span class="display-2--description lh-base">
                             this is a multi purpose responsive layout created with bootstrap 5.
                         </span>
                     </h1>
@@ -65,15 +69,38 @@
                         </span>
                     </button>
                   </div>
-                  <div class="col-md-6 intros">
 
+                  <!-- START THE CONTENT FOR THE VIDEO -->
+                  <div class="col-md-6 intros text-end">
+                    <div class="video-box">
+                      <img src="img/coding.png" alt="video illustrtion" class="img-fluid"/>
+                      <a href="" class="glightbox position-absolute top-50 start-50 translate-middle"> 
+                        <span>
+                          <i class="fas fa-play-circle"></i>
+                        </span>
+                        <span class="border-animation border-animation--border-1"></span>
+                        <span class="border-animation border-animation--border-2"></span>
+                      </a>
+                    </div>
                   </div>
               </div>
           </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,128L40,149.3C80,171,160,213,240,229.3C320,245,400,235,480,208C560,181,640,139,720,128C800,117,880,139,960,165.3C1040,192,1120,224,1200,213.3C1280,203,1360,149,1400,122.7L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
       </section>
 
 
 
+<script src="/assets/vendors/js/glightbox.min.js"></script>
+<script type="text/javascript">
+const lightbox = GLightbox({
+  'href': 'https://youtu.be/pAo16t5LT5I',
+  'type': 'video',
+  'source': 'youtube', //vimeo, youtube or local
+  'width': 900,
+  'autoPlayVideos': 'true'
+});
+
+</script>
 <script src="/assets/js/bootstrap.bundle.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
