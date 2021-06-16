@@ -8,5 +8,6 @@ Also feel free to use this Template for you Portifolio because i know i will.
 <ul>
 <li><a href="https://www.manypixels.co/gallery">illustrations</a></li>
 <li><a href="https://getwaves.io/">Div-wave</a></li>
+<li><a href="https://tablericons.com/">Tabler Icons</a></li>
 </u>
 ## Remember to follow this account for amaizing projects and new products
